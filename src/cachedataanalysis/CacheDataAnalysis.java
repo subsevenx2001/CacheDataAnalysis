@@ -40,6 +40,7 @@ public class CacheDataAnalysis {
         int size = 16;
         
         //bear
+        //fuck
        
         
         //FlowTableWindow flowWindow = new FlowTableWindow(new File("flowlog.txt"));
