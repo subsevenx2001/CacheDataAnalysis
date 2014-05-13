@@ -79,7 +79,7 @@ public class FlowCache implements CacheSimulator{
                 if(e!=null)
                     cache.add(e);
             }else{
-                cache.add(new FlowEntry(packet.toString()));
+                //cache.add(new FlowEntry(packet.toString()));
             }
         }else{
             cache.remove(findVictim());
@@ -89,7 +89,7 @@ public class FlowCache implements CacheSimulator{
                 if(e!=null)
                     cache.add(e);
             }else{
-                cache.add(new FlowEntry(packet.toString()));
+                //cache.add(new FlowEntry(packet.toString()));
             }
         }
         
