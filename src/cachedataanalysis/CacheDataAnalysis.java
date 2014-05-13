@@ -46,6 +46,9 @@ public class CacheDataAnalysis {
     }
 
     private static String getConfig(String key) {
+        if (props == null) {
+            loadProperties();
+        }
         return props.getProperty(key);
     }
     
