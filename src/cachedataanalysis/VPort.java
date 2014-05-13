@@ -48,7 +48,7 @@ public class VPort {
             }
             
             String line = bf.readLine();
-            System.err.println(line);
+            //System.err.println(line);
             PacketLog log = new PacketLog(line);
             while((int)log.getTime()==time){
                 packets.add(log);
