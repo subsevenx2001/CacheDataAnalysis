@@ -27,7 +27,7 @@ import org.jfree.data.xy.XYSeriesCollection;
  */
 public class FlowCache implements CacheSimulator{
     
-    private int policy = 0;
+    protected int policy = 0;
     boolean fullReport;
     
     ArrayList<FlowEntry> cache;
@@ -38,9 +38,9 @@ public class FlowCache implements CacheSimulator{
     ArrayList<Integer> hitCount,allCount;
     ArrayList<Float> hitRateRecord;
     
-    private final FlowTableWindow flowTable;
-    private final int size;
-    private final String name;
+    final FlowTableWindow flowTable;
+    protected final int size;
+    protected final String name;
     
     public int hit=0,miss=0;
     
@@ -71,7 +71,7 @@ public class FlowCache implements CacheSimulator{
         this.policy = policy;
     }
     
-    private void update(PacketLog packet){
+    protected void update(PacketLog packet){
         
         if(cache.size()<size){
             if(flowTable!=null){
@@ -95,6 +95,8 @@ public class FlowCache implements CacheSimulator{
         
     }
     
+    public static final int LFU = 0;
+    public static final int LRU = 1;
     
     private int findVictim(){
         
