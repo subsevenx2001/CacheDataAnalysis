@@ -69,7 +69,7 @@ public class CacheDataAnalysis {
        //new hello
         
         //FlowTableWindow flowWindow = new FlowTableWindow(new File("flowlog.txt"));
-        FlowTableWindow flowWindow = null;
+        FlowTableWindow flowWindow = new FlowTableWindow(new File("flowlog.ftlog.txt"));
         ArrayList<VPort> ports = new ArrayList<VPort>();
         HashMap<String, CacheSimulator> caches = new HashMap<String, CacheSimulator>();
         ArrayList<PacketLog> packets;
