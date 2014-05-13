@@ -63,8 +63,6 @@ public class CacheDataAnalysis {
      */
     public static void main(String[] args) throws FileNotFoundException, IOException {
         
-        System.out.println(getConfig("POLICY"));
-        
         int size = 16;
         
         //bear
